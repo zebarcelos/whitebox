@@ -1,6 +1,7 @@
 import streamlit as st
 from apps import selecvars, selecinds,operationsbuy,operationssell
-
+if name == “main”: 
+  main()
 estrategias = ["Cruzamento de Médias", "Bandas de Bollinger", "VWAP", "IFR", "OBV","Canais de Keltner","HiLo Activator","MACD","Estocastico","Stop ATR","Parabolic SAR"]
 floats_select_dict = {"Cruzamento de Médias":"vMedia1,vMedia2", "Bandas de Bollinger": "vBollinger1,vBollinger2", "VWAP":"vVWAP", 
                       "IFR":"vIFR","OBV":"vOBV","Canais de Keltner":"vKeltnerCH1,vKeltnerCH2","HiLo Activator":"vHiloActivator",
